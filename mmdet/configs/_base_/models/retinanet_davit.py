@@ -2,6 +2,7 @@
 model = dict(
     type='RetinaNet',
     pretrained=None,
+    
     backbone=dict(
         type='DaViT',
         embed_dims=(96, 192, 384, 768),
@@ -23,7 +24,7 @@ model = dict(
         num_outs=5),
     bbox_head=dict(
         type='RetinaHead',
-        num_classes=80,
+        num_classes=4, # vehicle modify
         in_channels=256,
         stacked_convs=4,
         feat_channels=256,
