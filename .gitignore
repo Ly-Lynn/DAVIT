@@ -137,3 +137,7 @@ Testing notebook.ipynb
 
 .idea/
 *.DS_Store
+
+mmcv/
+mmdetection/
+cocoapi/
